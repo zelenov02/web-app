@@ -1,0 +1,47 @@
+.body-inf {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 48%);
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+@media (min-width:1px) and (max-width:500px){
+    .body-inf{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        margin-left: -2px;
+    }
+}
+
+.features h1{
+    margin-top: 40px;
+}
+
+.left-column img{
+  max-height: 900px;
+}
+
+.product__quantity{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.smart-basket__quantity-item input{
+    height: 40px;
+}
+
+.smart-basket__quantity-item button{
+    height: 40px;
+    color: #07b1e5;
+    background-color: #323642;
+}
+
+.product__quantity button:hover{
+    color: #fff;
+    background-color: #07b1e5;
+}

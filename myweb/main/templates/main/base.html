@@ -1,0 +1,133 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/87d31c7c10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="{% static 'main/js/scripts.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'main/css/smartbasket.css' %}">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-expand-xxl navbar-bark" style="background-color: #323642;">
+        <div class="container-fluid">
+            <span class="navbar-brand"><img src="{% static 'main/img/logo.png' %}" alt="logo">Мир-Спрота-63</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}"><i class="fa-solid fa-house"></i>    Главная</a>
+                    </li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'catalog' %}"><i class="fa-solid fa-bag-shopping"></i>    Каталог</a>
+                    </li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'delivery' %}"><i class="fa-solid fa-truck"></i>    Доставка</a>
+                    </li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}"><i class="fa-solid fa-address-card"></i>    О нас</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="basket-container">
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <i class="fa-solid fa-phone"></i>  +7(917) 637 75-87
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main>
+        {% block body %}
+        {% endblock %}
+        <div class="about">
+            <div class="about-text">
+                <h2>О компании</h2><br>
+                <h3>Мир-Спорта-63</h3>
+                <p>
+                    За долгое время, наша компания получила много положительных отзывов от клиентов и партнеров.
+                    Мир-Спорта-63 предлагает широкий выбор спортивного оборудования для дома.
+                    У нас нет магазинов и выставочных образцов, из-за чего наши цены значительно ниже чем у конкурентов...
+                </p>
+                <div class="btn-keeper">
+                    <button type="button" class="button-about" href="{% url 'about' %}">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </main>
+<div class="container">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <p class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Мир-Спорта-63© 2022</font></font></p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Контакты</font></font></h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><i class="fa-solid fa-location-dot"></i>г.Самара</li>
+        <li class="nav-item mb-2"><i class="fa-regular fa-clock"></i>С 09:00 ДО 18:00 МСК</li>
+<!--        <li class="nav-item mb-2"><i class="fa-solid fa-phone"></i>+7(8422)71-90-70</li>-->
+        <li class="nav-item mb-2"><i class="fa-solid fa-phone"></i>+7(917) 637 75-87</li>
+        <li class="nav-item mb-2"><i class="fa-regular fa-envelope"></i>MIR-SPORT-63@YANDEX.RU</li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+         <div class="smart-basket__wrapper"></div>
+         <script src="{% static 'shop/js/smartbasket.js' %}"></script>
+
+             <script>
+                $(function () {
+                    $('.smart-basket__wrapper').smbasket({
+                        productElement: 'body-inf',
+                        buttonAddToBasket: 'form-group',
+                        productPrice: 'product__price-number',
+                        productSize: 'product__size-element',
+
+                        productQuantityWrapper: 'product__quantity',
+                        smartBasketMinArea: 'basket-container',
+                        countryCode: '+7',
+                        smartBasketCurrency: '₽',
+                        smartBasketMinIconPath: "{% static 'main/img/shopping-basket-wight.svg' %}",
+
+                        agreement: {
+                            isRequired: true,
+                            isChecked: true,
+                            isLink: false,
+                        },
+                        nameIsRequired: false,
+                    });
+                });
+             </script>
+
+</body>
+</html>

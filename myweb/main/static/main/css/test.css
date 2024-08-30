@@ -1,0 +1,43 @@
+.container-fluid span img{
+    width: 60px;
+    margin-top: -5px;
+}
+
+.container-fluid span{
+    font-size: 27px;
+    font-weight: bold;
+    color: #07b1e5;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+.container-fluid span:hover{
+    color: #07b1e5;
+}
+
+.container-fluid button{
+    color: white;
+}
+
+.container-fluid button:hover{
+    color: #07b1e5;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.container-fluid .collapse ul li a{
+    margin-left: 50px;
+    margin-top: -5px;
+    font-weight: bold;
+    display: block;
+    color: white;
+    transition: all 0.45s ease;
+    text-decoration: none;
+}
+.container-fluid .collapse ul li a:hover{
+    color: #07b1e5;
+    text-decoration: none;
+    transform: scale(1.1);
+}

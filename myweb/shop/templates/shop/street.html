@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+    {% block head %}
+    <link rel="stylesheet" href="{% static 'shop/css/catalog.css' %}">
+    {% endblock %}
+
+{% block title %}Турники{% endblock %}
+
+
+
+{% block body %}
+<div class="features">
+    <img class="catalog-fon" src="{% static 'shop/img/catalog-fon.jpg' %}">
+
+    {% for el in products %}
+        {% if el.type == 4 %}
+             <div class="wrapper">
+            {% if el.available is True %}
+                <div class="card">
+                    <a href="{% url 'products-detail' el.id %}">
+                        <img src="{{ el.image1.url }}">
+                        <h3>{{ el.title }}</h3>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+        {% endif %}
+{% endfor %}
+
+<!--        <div class="about">-->
+<!--            <div class="about-text">-->
+<!--                <h2>О компании</h2><br>-->
+<!--                <h3>Мир-Спорта-73</h3>-->
+<!--                <p>-->
+<!--                    За долгое время, наша компания получила много положительных отзывов от клиентов и партнеров.-->
+<!--                    Мир-Спорта-73 предлагает широкий выбор спортивного оборудования для взрослых и детей.-->
+<!--                    У нас нет магазинов и выставочных образцов, из-за чего наши цены значительно ниже чем у конкурентов...-->
+<!--                </p>-->
+<!--                <div class="btn-keeper">-->
+<!--                    <a class="btn" href="{% url 'about' %}">Подробнее</a>-->
+<!--                </div>-->
+<!--            <div>-->
+<!--        </div>-->
+<!--     </div>-->
+{% endblock %}

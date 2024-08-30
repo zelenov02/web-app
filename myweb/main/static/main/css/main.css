@@ -1,0 +1,188 @@
+.container-fluid span img{
+    width: 60px;
+    margin-top: -5px;
+}
+
+.container-fluid .navbar-brand{
+    font-size: 27px;
+    font-weight: bold;
+    color: #07b1e5;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+.container-fluid .navbar-brand:hover{
+    color: #07b1e5;
+}
+
+.container-fluid button{
+    color: white;
+}
+
+.container-fluid button:hover{
+    color: #07b1e5;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.container-fluid .collapse ul li a{
+    margin-left: 50px;
+    margin-top: -5px;
+    font-weight: bold;
+    display: block;
+    color: white;
+    transition: all 0.45s ease;
+    text-decoration: none;
+}
+.container-fluid .collapse ul li a:hover{
+    color: #07b1e5;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+main .features {
+    float: top;
+    color: #323642;
+    text-align: center;
+}
+
+main .features h1 {
+    font-size: 50px;
+}
+
+.body-inf {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 500px;
+    margin: 5% 22%;
+    text-align: center;
+    background: #323642 !important;
+}
+
+.alert-warning h3{
+    color: white;
+    transition: all 0.45s ease;
+}
+
+.alert-warning h3:hover {
+    color: #07b1e5;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.alert-warning h4{color: white}
+.alert-warning p{color: white}
+.alert-warning img {
+    width: 350px;
+}
+
+.carousel-carousel{
+    margin-left: 40%;
+    background: #07b1e5;
+}
+.col{
+    float: right;
+    margin-left: 10%;
+}
+
+.d-flex{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: -5px;
+    font-weight: bold;
+    display: block;
+}
+
+.d-flex i{
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.basket-container{
+    width: 150px;
+}
+
+.smart-basket__min{
+    background-color: #323642;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border: 1px solid #323642;
+    margin-bottom: 19px;
+    transition: all 0.45s ease;
+    font-weight: bold;
+}
+
+.smart-basket__min:hover{
+    transform: scale(1.1);
+}
+
+.basket-container img{
+    width: 28px;
+    margin-top: 15px;
+}
+
+.about{
+    margin-top: 60px;
+}
+
+.about-text{
+    text-align: left;
+    float: left;
+    width: 100%;
+    margin-bottom: 100px;
+    background: lightgrey;
+    border-left: 50px solid #D3D3D3FF;
+    border-bottom: 70px solid #D3D3D3FF;
+}
+
+.about-text h2{
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #323642;
+}
+
+.about-text h3{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #323642;
+    font-weight: bold;
+}
+
+.about-text p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #323642;
+    font-weight: bold;
+}
+
+.btn-keeper {
+    margin-top: 50px;
+    float: right;
+    margin-right: 100px;
+
+}
+
+.btn-keeper button{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #323642;
+    border-radius: 7px;
+    transition: all 0.45s ease;
+    color: white;
+}
+
+.btn-keeper button:hover{
+    transform: scale(1.1);
+    background-color: #07b1e5;
+    color: #323642;
+}

@@ -1,0 +1,56 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+    {% block head %}
+    <link rel="stylesheet" href="{% static 'shop/css/catalog.css' %}">
+    {% endblock %}
+
+{% block title %}Каталог{% endblock %}
+
+{% block body %}
+     <div class="features">
+        <img class="catalog-fon" src="{% static 'shop/img/catalog-fon.jpg' %}">
+         <div class="wrapper">
+
+             <div class="card">
+                 <a href="{% url 'turnik' %}">
+                     <img src="{% static 'shop/img/turnik.jpg' %}" alt="Турник">
+                     <h3>Турники</h3>
+                 </a>
+             </div>
+
+             <div class="card">
+                 <a href="{% url 'uatlet' %}">
+                     <img src="{% static 'shop/img/dsk.jpg' %}" alt="ДСК">
+                     <h3>Юный атлет</h3>
+                 </a>
+             </div>
+
+             <div class="card">
+                 <a href="{% url 'atlet' %}">
+                     <img src="{% static 'shop/img/sk.jpg' %}" alt="Спорт комплекс">
+                     <h3>Атлет</h3>
+                </a>
+             </div>
+
+             <div class="card">
+                 <a href="{% url 'street' %}">
+                     <img src="{% static 'shop/img/udsk.jpg' %}" alt="Уличные спрот комплексы">
+                     <h3>Уличные комплексы</h3>
+                 </a>
+             </div>
+
+             <div class="card">
+                 <a href="{% url 'more' %}">
+                     <img src="{% static 'shop/img/dop.jpg' %}" alt="Доп оборудование">
+                     <h3>Доп оборудование</h3>
+                 </a>
+             </div>
+
+         </div>
+     </div>
+{% endblock %}
+
+{% block about %}
+{% endblock %}

@@ -1,0 +1,93 @@
+body {
+    background: white !important;
+}
+aside {
+    float: left;
+    background: #323642;
+    width: 14.1%;
+    padding: 1.5%;
+    height: 100vh;
+    color: white;
+    border-right: 7px solid #07b1e5;
+}
+
+aside .logo {
+    color: #07b1e5;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+aside h3 {
+    margin-top: 40px;
+    font-size: 20px ;
+}
+
+aside ul {list-style: none;}
+aside ul li {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-top: 28px;
+    transition: all 0.45s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #07b1e5;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+main .features {
+    float: right;
+    color: #323642;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1 {
+    font-size: 50px;
+    margin-left: -20%;
+}
+main .features p{margin-left: -20%}
+main .features a{margin-left: -20%}
+
+.body-inf {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 500px;
+    margin: 5% 22%;
+    text-align: center;
+    background: #323642 !important;
+}
+
+.alert-warning h3{
+    color: white;
+    transition: all 0.45s ease;
+}
+
+.alert-warning h3:hover {
+    color: #07b1e5;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.alert-warning h4{color: white}
+.alert-warning p{color: white}
+.alert-warning img {
+    width: 350px;
+}
+
+/*img {
+ padding: 5px; /* Толщина рамки */
+ /*background: #07b1e5; /* Цвет рамки */
+/*}
+ */
+#carousel{
+    background: #07b1e5;
+}

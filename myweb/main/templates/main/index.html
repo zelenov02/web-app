@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+    {% block head %}
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    {% endblock %}
+{% block title %}Мир-Спорта-63{% endblock %}
+
+{% block body %}
+    <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{% static 'main/img/slide1.jpg' %}" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{% static 'main/img/slide2.jpg' %}" alt="">
+            </div>
+            <div class="carousel-item">
+                 <img class="d-block w-100" src="{% static 'main/img/slide3.jpg' %}" alt="">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselControls" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselControls" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+    <div class="features">
+        <h4>Спорт - это жизнь!</h4>
+        <p>
+            Основным критерием успеха является здоровый образ жизни. Мы активно продвигаем идею регулярных тренировок в домашних условиях. Наши турники отлично подходят для дома, ведь они не занимают много места и позволяют выполнять полный комплекс упражнений. Турник легко превращается в брусья.
+        </p>
+        <img src="{% static 'main/img/turnik1.png' %}"> <img src="{% static 'main/img/strelka.png' %}"> <img src="{% static 'main/img/turnik2.png' %}"><br>
+    </div>
+{% endblock %}
