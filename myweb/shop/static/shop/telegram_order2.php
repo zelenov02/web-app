@@ -137,8 +137,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $bodybottom = '</table>';
     }
 
-    $token = "***";
-    $chat_id = "***";
+    $token = "XXX";
+    $chat_id = "XXX";
     $arr = array(
         'Новый заказ',
         'Имя пользователя: ' => $name,

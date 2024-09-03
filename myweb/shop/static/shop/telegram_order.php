@@ -72,8 +72,8 @@ foreach ($_POST as $key =>  $value) {
 
 };
 
-$token = "***";
-$chat_id = "***";
+$token = "XXX";
+$chat_id = "XXX";
 $arr = array(
   'Новый заказ',
   'Имя пользователя: ' => $name,
