@@ -49,5 +49,5 @@
     border-top: 7px solid #07b1e5;
     image-rendering: -moz-crisp-edges; /* Firefox */
     -ms-interpolation-mode: nearest-neighbor;  /* IE */
-    image-rendering: crisp-edges; /* Стандартное свойство */
+    image-rendering: crisp-edges;
 }
